@@ -1,8 +1,13 @@
-function myFunction() {
-  let nav = document.getElementById("nav-links");
-  if (nav.style.display === "block") {
-    nav.style.display = "none";
-  } else {
-    nav.style.display = "block";
-  }
-}
+$(document).ready(function() {
+    $(".icon").click(function() {
+      if ($(".icon").css("display") == "block"){
+        event.preventDefault();
+        $("#nav-links").toggle();
+      }
+    });
+    $(".nav-link").click(function() {
+      if ($(".icon").css("display") == "block"){
+        $("#nav-links").toggle();
+      }
+    });
+});

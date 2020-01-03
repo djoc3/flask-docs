@@ -9,15 +9,15 @@ body {
     width: 150px;
     padding: 10px;
   }
+  #title {
+    display: none;
+  }
   main {
     padding: 100px 20px 20px 20px;
-  } 
+  }
   .anchor { 
     padding-top: 95px; 
     margin-top: -95px;
-  }
-  #navbar {
-    display: none; 
   }
   .topnav {
     overflow: hidden;
@@ -55,20 +55,27 @@ body {
   }
 }
 @media only screen and (min-width: 801px) {
-  .topnav {
-    display: none;
-  }
+  main {
+    padding: 30px 30px 30px 250px;
+  } 
   .anchor { 
     padding-top: 15px; 
     margin-top: -15px;
   }
-  #navbar {
+  .topnav {
     position: fixed;
     padding: 30px;
     float: left;
     height: 100%;
     width: 150px;
     background-color: #F5F5F5;
+  }
+  .topnav a.icon {
+    display: none;
+  }
+  #nav-links {
+    clear:both;
+    display: block;
   }
   .nav-link {
     display: block;
@@ -78,9 +85,6 @@ body {
     width: 100%;
     padding-bottom: 20px;
   }
-  main {
-    padding: 30px 30px 30px 250px;
-  } 
 }
 
 header {
