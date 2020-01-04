@@ -10,4 +10,11 @@ $(document).ready(function() {
         $("#nav-links").toggle();
       }
     });
+    $(window).resize(function() {
+      if ($(window).width() > 800) {
+        $("#nav-links").show();
+      } else {
+        $("#nav-links").hide();
+      }
+    });
 });
